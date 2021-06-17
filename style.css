@@ -75,7 +75,7 @@ body {
   content: "";
   height: 2px;
   width: 100%;
-  display: block;
+  display: block; /***important or nothing will show****/
   background-color: var(--dark-grayish-Blue);
 }
 
@@ -186,7 +186,18 @@ body {
   background-color: var(--red-clr);
   padding: 0.2rem 0.5rem;
   border-radius: 5px 5px;
+  cursor: pointer;
 }
+
+.btn--red:hover{
+  opacity: 0.8;
+}
+
+.btn--red:active{ /* clicked */
+  box-shadow: 2px 3px var(--red-clr);
+}
+
+
 
 .pitch__first ~ * {
   margin-top: 1rem;
