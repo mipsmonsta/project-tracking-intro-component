@@ -17,6 +17,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+
     <div class="container">
       <div class="navside__links">
           <img class="navside__logo icon--size" src="./images/logo.svg" alt="Logo">
@@ -27,7 +28,17 @@
             <span class="navitem navitem--dull">&#8226;</span>
             <a href="login" class="navitem navitem--dull">Login</a>
           </span>
-          <img class="navside__hamburger icon--size" src="./images/icon-hamburger.svg" alt="">
+          <div class="navside__hamburger icon">
+          <img class="icon--size" id="hamburger__icon" src="./images/icon-hamburger.svg" alt="">
+          <span class="hamburger__menu">
+            <a href="#product" class="hamburger__menuitem">Product</a>
+            <a href="#features" class="hamburger__menuitem">Features</a>
+            <a href="#pricing" class="hamburger__menuitem">Pricing</a>
+            <span></span>
+            <a href="login" class="hamburger__menuitem login">Login</a>
+          </span>
+          </div>
+        
       </div>
       <div class="navside">
         
@@ -52,5 +63,7 @@
         >. Coded by <a href="#">Yaojin Tham</a>.
       </p>
     </footer>
+    <script src="script.js"></script>
+
   </body>
 </html>
